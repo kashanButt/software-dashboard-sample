@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,300&display=swap");
+
+:root {
+  --black: #252525;
+  --voilet: #8a53f8;
+  --light-black: rgba(0, 0, 0, 0.15);
+  --golden: #c2994f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--black);
+  overflow-x: hidden;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+/* Sidebar Styling Start */
+aside {
+  width: 100px;
+  height: inherit;
+  background: var(--light-black);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+aside ul li {
+  width: 45px;
+  margin: 45px auto;
+  font-size: 35px;
+  flex-direction: column;
+  align-items: center;
+}
+aside ul li .active {
+  color: var(--voilet);
+}
+/* Sidebar Styling End */
+/* Main Content Styling Start */
+.content {
+  width: calc(100% - 100px - 5%);
+  position: relative;
+  float: right;
+  display: flex;
+}
+.mainContent {
+  width: 50%;
+}
+/* Navigation Styling Start */
+.navigation {
+  width: calc(100% - 100px - 5%);
+  height: 150px;
+  display: flex;
+  float: right;
+  align-items: center;
+}
+.navigation .heading {
+  width: 65%;
+}
+.navigation .search {
+  width: calc(35% - 50px);
+  display: flex;
+  align-items: center;
+}
+.navigation .search form {
+  width: 75%;
+  height: 45px;
+  display: flex;
+  align-content: center;
+}
+.navigation .search form button {
+  min-width: 50px;
+  background: inherit;
+  color: grey;
+  border: 0;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 22px;
+  background: var(--light-black);
+}
+.navigation .search form button .bx {
+  display: grid;
+  align-self: center;
+}
+.navigation .search form input {
+  width: calc(100% - 50px);
+  background: inherit;
+  color: grey;
+  border: 0;
+  outline: none;
+  border-radius: 0 10px 10px 0;
+  background: var(--light-black);
+}
+.navigation .search > button {
+  width: 15%;
+  height: 45px;
+  margin-left: 20px;
+  border: 0;
+  font-size: 35px;
+  outline: none;
+  float: right;
+  background: var(--voilet);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navigation .search > button .bx {
+  display: grid;
+  align-self: center;
+}
+/* Navigation Styling End */
+/* Chart Styling Start */
+.chart {
+  width: 96%;
+  background: var(--light-black);
+  padding: 2%;
+  border-radius: 10px;
+}
+.tooltip {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+}
+.tooltip > .tip {
+  width: calc(100% * (1 / 3));
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+.tooltip > .tip > p {
+  font-size: 12px;
+  display: grid;
+  align-content: center;
+}
+.tooltip > .tip > span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.tooltip > .tip:nth-child(1) > span {
+  background: var(--voilet);
+}
+.tooltip > .tip:nth-child(2) > span {
+  background: palevioletred;
+}
+.tooltip > .tip:nth-child(3) > span {
+  background: white;
+}
+/* Chart Styling End */
+/* Product Styling Start*/
+.products {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 10px 0;
+  background: var(--light-black);
+}
+.products .head {
+  width: 97%;
+  height: 50px;
+  padding: 0 3%;
+  align-items: center;
+  display: flex;
+}
+.products .head h2 {
+  width: 91%;
+}
+.products .head p .bx {
+  font-size: 40px;
+  transform: rotate(90deg);
+}
+.products .product {
+  display: flex;
+}
+.products .product .item {
+  width: calc(100% * (1 / 4) - 2%);
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.products .product .item .icon {
+  width: 60%;
+  height: 60px;
+  margin: auto;
+  background-color: var(--black);
+  font-size: 30px;
+  display: grid;
+  align-content: center;
+  border-radius: 10px;
+}
+/* Product Styling End*/
+/* Review Styling Start */
+.reviews {
+  width: 30%;
+  padding: 2% 5%;
+  position: absolute;
+  right: 60px;
+  background: var(--light-black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.reviews .head {
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  text-align: left;
+}
+.reviews .head h2 {
+  width: 95%;
+}
+.reviews .head p > .bx {
+  font-size: 30px;
+  transform: rotate(90deg);
+}
+.reviewListing {
+  width: 100%;
+  text-align: left;
+}
+.reviewListing > .card {
+  width: 100%;
+}
+.reviewListing > .card > .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.reviewListing > .card > .info > .avatar {
+  width: 15%;
+  font-size: 50px;
+  padding: 2%;
+  padding-left: 0;
+  display: grid;
+  align-items: center;
+}
+.reviewListing > .card > .info > .name {
+  width: calc(100% - 17% - 25%);
+}
+.reviewListing > .card > .info > .star > .stars {
+  width: calc(100% - 17% - 25%);
+  display: flex;
+  color: var(--golden);
+}
+.reviewListing > .card > .info > .star > span {
+  font-size: 12px;
+  color: grey;
+}
+.reviewListing > .card > .info > .name > .product {
+  color: var(--voilet);
+}
+.seperator {
+  width: 100%;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.seeMore {
+  color: white;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  align-self: center;
+}
+.seeMore .bx {
+  font-size: 30px;
+}
+/* Review Styling End */
+/* Main Content Styling End */

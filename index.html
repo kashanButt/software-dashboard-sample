@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Practice</title>
+
+    <!-- Box Icons CDN Start-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Box Icons CDN End-->
+
+    <!-- Stylesheet Start -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Stylesheet End -->
+  </head>
+  <body>
+    <main>
+      <!-- Sidebar Start -->
+      <aside>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><i class="bx bxs-home-alt-2"></i></a>
+            </li>
+            <li>
+              <a href="#" class="active"><i class="bx bxs-dashboard"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxs-bar-chart-alt-2"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxs-bell"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxs-envelope"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxs-cog"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Sidebar End -->
+
+      <!-- Content Start -->
+      <!-- Navigation Start -->
+      <div class="navigation">
+        <div class="heading">
+          <h1>Dashboard</h1>
+        </div>
+        <div class="search">
+          <form action="#">
+            <button type="submit"><i class="bx bx-search"></i></button>
+            <input type="search" id="search" placeholder="Search" />
+          </form>
+          <button><i class="bx bx-menu"></i></button>
+        </div>
+      </div>
+      <!-- Navigation End -->
+      <div class="content">
+        <!-- Main Content Start -->
+        <div class="mainContent">
+          <!-- Chart Start -->
+          <div class="chart">
+            <canvas id="myChart"></canvas>
+            <div class="tooltip">
+              <div class="tip">
+                <span></span>
+                <p>This Month</p>
+              </div>
+              <div class="tip">
+                <span></span>
+                <p>Last Month</p>
+              </div>
+              <div class="tip">
+                <span></span>
+                <p>2 Months Ago</p>
+              </div>
+            </div>
+          </div>
+          <!-- Chart End -->
+          <!-- Products Start -->
+          <div class="products">
+            <div class="head">
+              <h2>My Products</h2>
+              <p><i class="bx bx-dots-vertical-rounded"></i></p>
+            </div>
+            <div class="product">
+              <div class="item">
+                <div class="icon">
+                  <i class="bx bx-package"></i>
+                </div>
+                <p>Product #A</p>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <i class="bx bxs-star"></i>
+                </div>
+                <p>Product #B</p>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <i class="bx bxl-product-hunt"></i>
+                </div>
+                <p>Product #C</p>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <i class="bx bxs-moon"></i>
+                </div>
+                <p>Product #D</p>
+              </div>
+            </div>
+          </div>
+          <!-- Products End -->
+        </div>
+        <!-- Main Content End -->
+        <!-- Reviews Start -->
+        <div class="reviews">
+          <div class="head">
+            <h2>Reviews</h2>
+            <p><i class="bx bx-dots-vertical-rounded"></i></p>
+          </div>
+          <div class="reviewListing">
+            <div class="card">
+              <div class="info">
+                <div class="avatar">
+                  <i class="bx bxs-user-circle"></i>
+                </div>
+                <div class="name">
+                  <h3>Claudia Alves</h3>
+                  <span class="product">Product #A</span>
+                </div>
+                <div class="star">
+                  <p class="stars">
+                    <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                    ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                    ><i class="bx bxs-star"></i>
+                  </p>
+                  <span class="time"
+                    ><i class="bx bxs-time-five"></i> 2 Min Ago</span
+                  >
+                </div>
+              </div>
+              <div class="comment">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing"</p>
+              </div>
+            </div>
+            <hr class="seperator" />
+            <div class="card">
+              <div class="info">
+                <div class="avatar">
+                  <i class="bx bxs-user-circle"></i>
+                </div>
+                <div class="name">
+                  <h3>Claudia Alves</h3>
+                  <span class="product">Product #A</span>
+                </div>
+                <div class="star">
+                  <p class="stars">
+                    <i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                    ><i class="bx bxs-star"></i><i class="bx bxs-star"></i
+                    ><i class="bx bxs-star"></i>
+                  </p>
+                  <span class="time"
+                    ><i class="bx bxs-time-five"></i> 2 Min Ago</span
+                  >
+                </div>
+              </div>
+              <div class="comment">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing"</p>
+              </div>
+            </div>
+            <hr class="seperator" />
+          </div>
+          <p class="seeMore">See More <i class="bx bx-chevron-down"></i></p>
+        </div>
+        <!-- Reviews End -->
+      </div>
+      <!-- Content End -->
+    </main>
+    <!-- Script Start -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+    <!-- Script End -->
+  </body>
+</html>
