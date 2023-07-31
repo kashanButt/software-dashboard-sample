@@ -317,3 +317,172 @@ aside ul li .active {
 }
 /* Review Styling End */
 /* Main Content Styling End */
+
+/* Notification Page Styling Start */
+.overflow {
+  overflow: scroll;
+  height: 450px;
+  overflow-x: hidden;
+  overflow-x: hidden;
+}
+.overflow::-webkit-scrollbar {
+  display: none;
+}
+/* Recent Notification Styling Start */
+.mainContent > .recent {
+  width: 96%;
+  padding: 2%;
+  border-radius: 10px;
+  background: var(--light-black);
+}
+.mainContent > .recent .notification {
+  width: 100%;
+}
+.mainContent > .recent .notification > .card {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  /* align-items: center; */
+}
+.mainContent > .recent .notification > .card > .icon {
+  width: 10%;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+}
+.mainContent > .recent .notification > .card > .icon > .bx {
+  display: grid;
+  align-content: center;
+}
+.mainContent > .recent .notification > .card > .info {
+  width: 75%;
+}
+.mainContent > .recent .notification > .card > .time {
+  width: 15%;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/* Recent Notification Styling End */
+/* Older Notification Styling Start */
+.mainContent > .older {
+  width: 96%;
+  padding: 2%;
+  margin-top: 40px;
+  border-radius: 10px;
+  background: var(--light-black);
+}
+.mainContent > .older .notification {
+  width: 100%;
+}
+.mainContent > .older .notification > .card {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  /* align-items: center; */
+}
+.mainContent > .older .notification > .card > .icon {
+  width: 10%;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+}
+.mainContent > .older .notification > .card > .icon > .bx {
+  display: grid;
+  align-content: center;
+}
+.mainContent > .older .notification > .card > .info {
+  width: 75%;
+}
+.mainContent > .older .notification > .card > .time {
+  width: 15%;
+  font-size: 12px;
+  margin: 5px 0 0 5px;
+}
+/* Older Notification Styling End */
+/* Filter Styling Start */
+.filters {
+  width: 30%;
+  padding: 2% 5%;
+  position: absolute;
+  right: 60px;
+  background: var(--light-black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.filters .head {
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  text-align: left;
+}
+.filters .head h2 {
+  width: 95%;
+}
+.filters .head p > .bx {
+  font-size: 30px;
+  transform: rotate(90deg);
+}
+.filterListing {
+  width: 100%;
+  text-align: left;
+}
+.filterListing > .card {
+  width: 100%;
+}
+.filterListing > .card .recent,
+.filterListing > .card .name,
+.filterListing > .card .date {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.filterListing > .card .recent p {
+  width: 95%;
+}
+.filterListing > .card .recent input {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+.filterListing > .card .name p {
+  width: 95%;
+}
+.filterListing > .card .name #filterName {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  background: inherit;
+  border: none;
+  outline: none;
+  color: white;
+}
+.filterListing > .card .name #filterName option {
+  color: var(--black);
+}
+.filterListing > .card .date p {
+  width: 95%;
+}
+.filterListing > .card .date #filterDate {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  background: inherit;
+  border: none;
+  outline: none;
+  color: white !important;
+  display: flex;
+  align-content: center;
+}
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.filterListing > .card .date .calender-icon {
+  margin-left: -20px;
+  margin-top: -4px;
+}
+/* Filter Styling End */
+/* Notification Page Styling End */

@@ -34,15 +34,12 @@
               <a href="#"><i class="bx bxs-bar-chart-alt-2"></i> Charts</a>
             </li>
             <li>
-              <a href="#"
-                ><i class="bx bxs-bell"></i
-                ><span class="notfication">12</span> Notifications</a
-              >
+              <a href="alerts.html"><i class="bx bxs-bell"></i>Notifications</a>
             </li>
             <li>
               <a href="#"
                 ><i class="bx bxs-envelope"></i
-                ><span class="emails">5</span> Emails</a
+                ><span class="emails">12</span> Emails</a
               >
             </li>
             <li>
@@ -57,7 +54,7 @@
       <!-- Navigation Start -->
       <div class="navigation">
         <div class="heading">
-          <h1>Notifications</h1>
+          <h1>Notification</h1>
         </div>
         <div class="search">
           <form action="#">
@@ -72,8 +69,143 @@
       <!-- Navigation End -->
       <div class="content">
         <!-- Main Content Start -->
-        <div class="mainContent"></div>
+        <div class="mainContent overflow">
+          <!-- Recent Notification Start -->
+          <div class="recent">
+            <h2>Recent</h2>
+            <div class="notification">
+              <div class="card">
+                <div class="icon">
+                  <i class="bx bx-user-circle"></i>
+                </div>
+                <div class="info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dignissimos, itaque.
+                  </p>
+                </div>
+                <div class="time">
+                  <i class="bx bxs-time-five"></i> 2 Min Ago
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <i class="bx bx-user-circle"></i>
+                </div>
+                <div class="info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dignissimos, itaque.
+                  </p>
+                </div>
+                <div class="time">
+                  <i class="bx bxs-time-five"></i> 2 Min Ago
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <i class="bx bx-user-circle"></i>
+                </div>
+                <div class="info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dignissimos, itaque.
+                  </p>
+                </div>
+                <div class="time">
+                  <i class="bx bxs-time-five"></i> 2 Min Ago
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recent Notification End -->
+          <!-- Old Notification Start -->
+          <div class="older">
+            <div class="notification">
+              <div class="card">
+                <div class="icon">
+                  <i class="bx bx-user-circle"></i>
+                </div>
+                <div class="info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dignissimos, itaque.
+                  </p>
+                </div>
+                <div class="time">
+                  <i class="bx bxs-time-five"></i> 2 Min Ago
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <i class="bx bx-user-circle"></i>
+                </div>
+                <div class="info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dignissimos, itaque.
+                  </p>
+                </div>
+                <div class="time">
+                  <i class="bx bxs-time-five"></i> 2 Min Ago
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <i class="bx bx-user-circle"></i>
+                </div>
+                <div class="info">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dignissimos, itaque.
+                  </p>
+                </div>
+                <div class="time">
+                  <i class="bx bxs-time-five"></i> 2 Min Ago
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- older Notification End -->
+        </div>
         <!-- Main Content End -->
+        <!-- Filters Start -->
+        <div class="filters">
+          <div class="head">
+            <h2>Filters</h2>
+            <p><i class="bx bx-dots-vertical-rounded"></i></p>
+          </div>
+          <div class="filterListing">
+            <div class="card">
+              <form action="">
+                <div class="recent">
+                  <p>Recent</p>
+                  <input
+                    type="checkbox"
+                    name="filterRecent"
+                    id="filterRecent"
+                  />
+                </div>
+                <div class="name">
+                  <p>By Name</p>
+                  <select name="filterName" id="filterName">
+                    <option value="" selected hidden>Select Name</option>
+                    <option value="">Customer #1</option>
+                    <option value="">Customer #2</option>
+                    <option value="">Customer #3</option>
+                  </select>
+                </div>
+                <div class="date">
+                  <p>By Date</p>
+                  <input type="date" name="filterDate" id="filterDate" /><i
+                    class="bx bx-calendar-week calender-icon"
+                  ></i>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Filters End -->
       </div>
       <!-- Content End -->
     </main>
