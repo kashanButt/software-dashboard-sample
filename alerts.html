@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Practice</title>
+
+    <!-- Box Icons CDN Start-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Box Icons CDN End-->
+
+    <!-- Stylesheet Start -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Stylesheet End -->
+  </head>
+  <body>
+    <main>
+      <!-- Sidebar Start -->
+      <aside>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><i class="bx bxs-user-circle"></i> Admin</a>
+            </li>
+            <li>
+              <a href="/" class="active"
+                ><i class="bx bxs-dashboard"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bx bxs-bar-chart-alt-2"></i> Charts</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bx bxs-bell"></i
+                ><span class="notfication">12</span> Notifications</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bx bxs-envelope"></i
+                ><span class="emails">5</span> Emails</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bx bxs-cog"></i> Settings</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Sidebar End -->
+
+      <!-- Content Start -->
+      <!-- Navigation Start -->
+      <div class="navigation">
+        <div class="heading">
+          <h1>Notifications</h1>
+        </div>
+        <div class="search">
+          <form action="#">
+            <input type="search" id="search" placeholder="Search" />
+            <button type="submit"><i class="bx bx-search"></i></button>
+          </form>
+          <button class="toggleSidebarBtn">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Navigation End -->
+      <div class="content">
+        <!-- Main Content Start -->
+        <div class="mainContent"></div>
+        <!-- Main Content End -->
+      </div>
+      <!-- Content End -->
+    </main>
+    <!-- Script Start -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+    <!-- Script End -->
+  </body>
+</html>

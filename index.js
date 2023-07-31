@@ -1,3 +1,17 @@
+var sideBar = document.querySelector("aside");
+const toggleSidebarBtn = document.querySelector(".toggleSidebarBtn");
+
+// function addToggle() {
+//   if (sideBar.classList.contains("incWidth")) {
+//     sideBar.classList.remove("incWidth");
+//   } else {
+//     sideBar.classList.add("incWidth");
+//   }
+//   document.querySelector(".navigation").style.width = "calc(100% - 250px - 5%)";
+//   document.querySelector(".content").style.width = "calc(100% - 250px - 5%)";
+// }
+// toggleSidebarBtn.addEventListener("click", addToggle());
+
 const data = {
   labels: ["Week #1", "Week #2", "Week #3", "Week #4"],
   datasets: [
